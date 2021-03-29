@@ -25,3 +25,5 @@ $allowed = array(
   'system/library/',
   'image/catalog/'
 );
+
+As an additional note, there is a setting in Open Cart to track and show customer activity in the dashboard. You can enable this to allow new returns to appear on the main admin dashboard along with other useful information.
