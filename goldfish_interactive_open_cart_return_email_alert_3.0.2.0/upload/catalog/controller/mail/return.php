@@ -42,6 +42,8 @@ class ControllerMailReturn extends Controller {
             $mail->setSender(html_entity_decode($this->config->get('config_name'), ENT_QUOTES, 'UTF-8'));
             $mail->setSubject(sprintf($this->language->get('text_subject'), html_entity_decode($this->config->get('config_name'), ENT_QUOTES, 'UTF-8'), $return_info['return_id']));
             $mail->setText($this->load->view('mail/return_alert', $data));
+            $mail->setTo($this->config->get('config_email'));
+            $mail->send();
 
             // Send to additional alert emails if new affiliate email is enabled
             $emails = explode(',', $this->config->get('config_mail_alert_email'));
