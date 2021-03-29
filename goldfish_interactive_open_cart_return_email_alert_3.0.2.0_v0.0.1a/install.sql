@@ -1,0 +1,3 @@
+UPDATE `event` SET `code` = 'admin_mail_return_history', `trigger` = 'admin/model/sale/return/addReturnHistory/after', `action` = 'mail/return', `status` = 1, `sort_order` = 0 WHERE `code` = 'admin_mail_return';
+INSERT INTO `event` SET `code` = 'mail_return', `trigger` = 'catalog/model/account/return/addReturn/after', `action` = 'mail/return', `status` = 1, `sort_order` = 0;
+INSERT INTO `event` SET `code` = 'mail_return_alert', `trigger` = 'catalog/model/account/return/addReturn/after', `action` = 'mail/return/alert', `status` = 1, `sort_order` = 0;

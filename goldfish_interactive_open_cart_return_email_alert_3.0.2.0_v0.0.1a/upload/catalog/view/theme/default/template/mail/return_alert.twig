@@ -1,0 +1,36 @@
+{{ text_return_id }} {{ return_id }}
+{{ text_date_added }} {{  date_added }}
+{% if status %}{{ text_status }} {{ status }}
+{% endif %}
+
+{{ text_order_id }} {{ order_id }}
+{{ text_date_ordered }} {{ date_ordered }}
+
+{% if firstname %}{{ text_firstname }} {{ firstname }}
+{% endif %}
+{% if lastname %}{{ text_lastname }} {{ lastname }}
+{% endif %}
+{% if email %}{{ text_email }} {{ email }}
+{% endif %}
+{% if telephone %}{{ text_telephone }} {{ telephone }}
+{% endif %}
+
+{% if product %}{{ text_product }} {{ product }}
+{% endif %}
+{% if model %}{{ text_model }} {{ model }}
+{% endif %}
+{% if quantity %}{{ text_quantity }} {{ quantity }}
+{% endif %}
+{% if opened %}{{ text_opened }} {{ opened }}
+{% endif %}
+{% if reason %}{{ text_reason }} {{ reason }}
+{% endif %}
+{% if action %}{{ text_action }} {{ action }}
+{% endif %}
+
+{% if comment %}
+{{ text_comment }}
+{{ comment }}
+{% endif %}
+
+{{ text_footer }}
